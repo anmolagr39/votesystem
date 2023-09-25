@@ -10,9 +10,7 @@ contract votesys{
     mapping(uint => candidate) public candidates;
     mapping(address => bool) public voters;
     uint public candcount;
-    event votedevent(
-        uint indexed candid
-    );
+ 
     constructor() public{
         addcand("candidate 1");
         addcand("candidate 2");
